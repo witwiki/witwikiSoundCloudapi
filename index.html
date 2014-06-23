@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="http://connect.soundcloud.com/sdk.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+
+		<!--- This helps connect with SoundCloud-->
+        <a href="#" class="connect">Connect with SoundCloud</a>
+   	    <p>Hello, your name is <span id="username"></span></p>
+
+   	    <!--- This helps list sounds of a particular genre mentioned in results-->
+		<ul id="results">
+
+
+		</ul>
+
+		<!--- Embedding a Player Widget -->
+		<div id="player"></div>
+
+		<!--- Streaming Sounds -->
+        <a href="#" id="start">Start</a>
+        <a href="#" id="stop">Stop</a>
+
+        <!--- Building Recorder HTML:
+    		  This functionality requires Flash, but don't worry, you don't need
+    		  to know Flash in order to get it working (Codecademy).
+    	-->
+    	        <ul>
+        	<li id="startRecording"><a href="#">Start Recording</a></li>
+        	<li id="stopRecording"><a href="#">Stop Recording</a></li>
+        	<li id="playBack"><a href="#">Play Recorded Sound</a></li>
+        	<li id="upload"><a href="#">Upload</a></li>
+        </ul>
+        <p class="status"></p>
+
+        <!--- Commenting on specific points on SoundCloud Tracks -->
+        <ul id="comments">
+
+        </ul>
+
+        <!--- Triggering Events with Comments -->
+        <p id="comments">
+
+        </p>
+
+        <!--- Posting Comments -->
+	    <form id="comment_form">
+	    	<p><label for="comment">Comment Body:</label></p>
+	    	<p><textarea id="comment_body" rows="10" cols="50"></textarea></p>
+	    	<p><input type="submit" name="submit" value="Comment"></p>
+	    </form>
+	    
+	    <p id="status"></p>
+
+
+
+	</body>
+</html>
